@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
+import { Route, Routes, NavLink } from 'react-router-dom';
 import LoginPage from './components/Forms';
 import RegistrationPage from './pages/RegistrationPage';
 import MultiStepForm from './pages/MultiStepForm';

@@ -8,17 +8,20 @@ interface Step1Props {
 const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+    setFormData((prevData: any) => ({ ...prevData, [name]: value }));
   };
 
   const handleAddressChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
+    setFormData((prevData: { address: any; }) => ({
       ...prevData,
-      address: { ...prevData.address, [name]: value },
-    }));
+      address: {
+        ...prevData.address,
+        [name]: value,
+      },
+    } as typeof prevData)); 
   };
-
+  
   return (
     <div className='w-full h-full'>
       <h2 className="text-xl font-semibold mb-4">Step 1: Basic Details</h2>

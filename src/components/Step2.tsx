@@ -16,7 +16,7 @@ const Step2: React.FC<Step2Props> = ({ formData, setFormData }) => {
   const handleUpload = () => {
     if (files) {
       const fileArray = Array.from(files);
-      setFormData((prevData) => ({ ...prevData, files: fileArray }));
+      setFormData((prevData: any) => ({ ...prevData, files: fileArray }));
     }
   };
 

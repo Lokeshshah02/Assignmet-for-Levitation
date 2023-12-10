@@ -25,7 +25,7 @@ const Step3: React.FC<Step3Props> = ({ formData, setFormData }) => {
   }, []);
 
   const handleDropdownChange = (selectedOptions: string[]) => {
-    setFormData((prevData) => ({
+    setFormData((prevData: any) => ({
       ...prevData,
       selectedOptions,
     }));

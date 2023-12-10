@@ -31,11 +31,9 @@ const Form: React.FC = () => {
   };
 
   const handleCancel = () => {
-    // Implement cancel logic (e.g., redirect to another page)
   };
 
   const handleSubmit = () => {
-    // Implement form submission logic (e.g., send data to the server)
     console.log('Form data submitted:', formData);
   };
 
